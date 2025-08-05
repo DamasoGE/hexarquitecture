@@ -1,0 +1,34 @@
+{
+  "name": "hexarquitecture",
+  "version": "1.0.0",
+  "description": "hexarquitecture",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamasoGE/hexarquitecture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DamasoGE/hexarquitecture/issues"
+  },
+  "homepage": "https://github.com/DamasoGE/hexarquitecture#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/pg": "^8.15.5",
+    "typescript": "^5.9.2"
+  }
+}

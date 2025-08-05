@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:3000
+@route = api/users
+
+### Create User
+POST {{baseUrl}}/{{route}}/
+Content-Type: application/json
+
+{
+  "name": "user",
+  "email": "user@gmail.com"
+}
+
+### Get all users
+GET {{baseUrl}}/{{route}}/
+Accept: application/json
+
+### Get User By Id
+GET {{baseUrl}}/{{route}}/6873795d5a2a145e3b8aa90d
+
+### Update User
+PATCH  {{baseUrl}}/{{route}}/6872d69daca8b7a666f0c486
+Content-Type: application/json
+
+{
+  "role": "ADMIN"
+}
+
+### Delete User
+DELETE {{baseUrl}}/api/users/6873795d5a2a145e3b8aa90d

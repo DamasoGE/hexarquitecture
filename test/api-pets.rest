@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:3000
+@route = api/pets
+
+### Create Pet
+POST {{baseUrl}}/{{route}}/
+Content-Type: application/json
+
+{
+  "name": "Fido",
+  "species": "dog",
+  "ownerId": "68924cda96348cf328284478"
+}
+
+
+### Get all pets
+GET {{baseUrl}}/{{route}}/
+Accept: application/json
