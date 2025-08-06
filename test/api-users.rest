@@ -6,7 +6,7 @@ POST {{baseUrl}}/{{route}}/
 Content-Type: application/json
 
 {
-  "name": "user",
+  "name": "userborrar",
   "email": "user@gmail.com"
 }
 
@@ -15,7 +15,7 @@ GET {{baseUrl}}/{{route}}/
 Accept: application/json
 
 ### Get User By Id
-GET {{baseUrl}}/{{route}}/6873795d5a2a145e3b8aa90d
+GET {{baseUrl}}/{{route}}/68924cda96348cf328284478
 
 ### Update User
 PATCH  {{baseUrl}}/{{route}}/6872d69daca8b7a666f0c486
@@ -26,4 +26,4 @@ Content-Type: application/json
 }
 
 ### Delete User
-DELETE {{baseUrl}}/api/users/6873795d5a2a145e3b8aa90d
+DELETE {{baseUrl}}/{{route}}/6893120ad1d787911f79c516

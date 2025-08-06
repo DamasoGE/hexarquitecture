@@ -57,4 +57,9 @@ export class MongoosePetRepository implements PetRepository {
       petDoc => new Pet(petDoc._id.toString(), petDoc.name, petDoc.species, petDoc.ownerId)
     );
   }
+
+  async delete(id: string): Promise<void> {
+    await PetModel.findByIdAndDelete(id);
+  }
+
 }

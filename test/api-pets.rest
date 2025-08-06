@@ -6,7 +6,7 @@ POST {{baseUrl}}/{{route}}/
 Content-Type: application/json
 
 {
-  "name": "Fido",
+  "name": "FidoBorrar",
   "species": "dog",
   "ownerId": "68924cda96348cf328284478"
 }
@@ -15,3 +15,6 @@ Content-Type: application/json
 ### Get all pets
 GET {{baseUrl}}/{{route}}/
 Accept: application/json
+
+### Delete Pet
+DELETE {{baseUrl}}/{{route}}/689311c3d1d787911f79c512

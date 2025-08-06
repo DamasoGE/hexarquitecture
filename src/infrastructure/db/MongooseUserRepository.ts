@@ -52,4 +52,8 @@ export class MongooseUserRepository implements UserRepository {
       await newUser.save();
     }
   }
+
+  async delete(id: string): Promise<void> {
+    await UserModel.findByIdAndDelete(id);
+  }
 }

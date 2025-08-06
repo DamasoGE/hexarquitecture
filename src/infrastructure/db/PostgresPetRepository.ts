@@ -42,4 +42,12 @@ export class PostgresPetRepository implements PetRepository {
       row => new Pet(row.name, row.species, row.owner_id, row.id,)
     );
   }
+
+  async delete(id: string): Promise<void> {
+    const result = await this.pool.query('DELETE FROM pets WHERE id = $1', [id]);
+
+    if (result.rowCount === 0) {
+      throw new Error('Mascota no encontrada');
+    }
+  }
 }
